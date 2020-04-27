@@ -25,11 +25,6 @@ resource "aws_dynamodb_table" "utility_app" {
     type = "N"
   }
 
-#   ttl {
-#     attribute_name = "TimeToExist"
-#     enabled        = false
-#   }
-
   global_secondary_index {
     name               = "Utility-StatementIndex"
     hash_key           = "Utility-Statement"
