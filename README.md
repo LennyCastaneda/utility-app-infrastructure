@@ -1,7 +1,9 @@
-# Terraform Version v0.12.21
-# AWS Provider v2.59.0
+# Utility App Infrustructure
 
-# Build the infrastructure
+## Terraform Version v0.12.21
+## AWS Provider v2.59.0
+
+## Build the infrastructure
 
 After setting up your devops env and exporting your AWS user credentials to the environment build the infrastructure from within the **utility-app-infrastructure** directory by running the following commands:
 
@@ -15,7 +17,7 @@ After setting up your devops env and exporting your AWS user credentials to the 
 
 ``terraform apply -auto-approve``
 
-# Destroy the infrastructure
+## Destroy the infrastructure
 
 When you are ready to remove your infrastructure execute from inside the **utility-app-infrastructure** directory
 
