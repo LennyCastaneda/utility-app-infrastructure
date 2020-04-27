@@ -76,7 +76,7 @@ resource "aws_autoscaling_policy" "this" {
   name                   = join("-",[var.name, "scale-out"])
   adjustment_type        = "ChangeInCapacity"
   policy_type            = "TargetTrackingScaling"
-  autoscaling_group_name = "${aws_autoscaling_group.this.name}"
+  autoscaling_group_name = aws_autoscaling_group.this.name
 
   target_tracking_configuration {
   predefined_metric_specification {
@@ -99,7 +99,7 @@ resource "aws_autoscaling_notification" "this" {
     "autoscaling:EC2_INSTANCE_TERMINATE_ERROR",
   ]
 
-  topic_arn = "${aws_sns_topic.this.arn}"
+  topic_arn = aws_sns_topic.this.arn
 }
 
 resource "aws_sns_topic" "this" {
