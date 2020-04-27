@@ -1,4 +1,4 @@
-# Utility App Infrustructure
+# Utility App Infrastructure
 
 ## Terraform Version v0.12.21
 ## AWS Provider v2.59.0
